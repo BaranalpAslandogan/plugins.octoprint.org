@@ -1,0 +1,56 @@
+---
+layout: plugin
+
+id: printox
+title: OctoPrint-Printox
+description: Plugin for cascading printing via esp32
+authors:
+  - Baranalp Aslandoğan
+license: AGPLv3
+
+date: 2021-11-30
+
+homepage: https://github.com/BaranalpAslandogan/OctoPrint-Printox
+source: https://github.com/BaranalpAslandogan/OctoPrint-Printox
+archive: https://github.com/BaranalpAslandogan/OctoPrint-Printox/archive/master.zip
+
+tags:
+  - printox
+  - rapid print
+  - esp32
+  - queue
+
+compatibility:
+  python: ">=2.7,<4"
+  os:
+    - linux
+    - windows
+    - macos
+    - freebsd
+  octoprint:
+    - 1.2.0
+
+screenshots:
+  - url: url of a screenshot, /assets/img/...
+    alt: alt-text of a screenshot
+    caption: caption of a screenshot
+  - url: url of another screenshot, /assets/img/...
+    alt: alt-text of another screenshot
+    caption: caption of another screenshot
+
+# TODO
+featuredimage: url of a featured image for your plugin, /assets/img/...
+---
+
+This plugin allows your multiple prints to be kicked out of bed via ESP32 with a custom platter mechanism. With this plugin, you can create multiple queues, delete an existing queue or update a queue of your choice. The plugin can work without ESP32, but you have to manually unmount the print every time you print.
+
+## Prerequisites
+
+Tinydb, Asyncio and Websockets packages must be installed for Python.
+
+## Setup
+
+Install the plugin via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
+or manually using this URL:
+
+    https://github.com/BaranalpAslandogan/OctoPrint-Printox/archive/master.zip
